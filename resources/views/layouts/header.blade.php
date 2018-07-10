@@ -16,7 +16,7 @@
                         <ul class="header-links pull-right">
                             <li><a href="/about">About Us</a></li>
                             <li><a href="#" class="modal-login" data-toggle="modal" data-target=".myModal">Login</a></li>
-                            <li><a href="#" class="modal-register" data-toggle="modal" data-target=".myModal">Register </a></li>
+                          <!--   <li><a href="#" class="modal-register" data-toggle="modal" data-target=".myModal">Register </a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -35,8 +35,8 @@
                     </button>
 
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/logo-white.png" alt="" class="logo1">
-                        <img src="assets/images/logo-green.png" alt="" class="logo2">
+                     <!--    <img src="{{asset('assets/images/logo-white.png')}}" alt="" class="logo1"> -->
+                        <img src="{{asset('assets/images/logo-green.png')}}" width=62 height=170 alt="" class="logo2">
                     </a>
                 </div>
                 <!-- button -->
@@ -75,4 +75,5 @@
             <!-- /.container-fluid -->
         </nav>
     </header>
+    @include('layouts.modal')
     <!--header-->

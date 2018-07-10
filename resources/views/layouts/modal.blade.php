@@ -8,44 +8,18 @@
                 <div class="modal-body">
                     <div class="login-register">
                         <ul class="nav nav-tabs" role="tablist">
-                            <li class="login-tab"><a href="#Login" data-toggle="tab">Login</a></li>
-                            <li class="register-tab"><a href="#register" data-toggle="tab">Register</a></li>
+                            <li class="login-tab"><a href="#Login" data-toggle="tab">
+                                {{ __('Login') }}
+                            </a></li>
+                          <!--   <li class="register-tab"><a href="#register" data-toggle="tab">Register</a></li> -->
                         </ul>
 
                         <div class="tab-content">
                             <div class="tab-pane login-tab" id="Login">
-                                <form action="#">
-                                    <div class="form-group">
-                                        <label>Username</label>
-                                        <input type="text">
-                                    </div>
-                                    <!--user name-->
-
-                                    <div class="form-group">
-                                        <label>Password</label>
-                                        <input type="password">
-                                    </div>
-                                    <!--password-->
-
-                                    <div class="button-wrap">
-                                       <a href="/login" class="btn btn-sucess btn-lg" value="Login">Login</a>
-                                        <a href="#" class="btn btn-link btn-lg forget-btn"> Forgot Password</a>
-                                    </div>
-                                </form>
+                               @include('layouts.form')
                                 <!--form-->
 
-                                <div class="or text-center"><strong>OR</strong></div>
-
-                                <ul class="modal-social">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i> facebook</a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i> twitter</a></li>
-                                </ul>
-
-                                <div class="note text-center">
-                                    <small>
-                                        Don’t have an account yet? <a href="#" class="btn-signup">Signup Now!</a>
-                                    </small>
-                                </div>
+                                <div class="or text-center"></div>
                             </div>
                             <!--login-->
 
@@ -76,18 +50,12 @@
                                     <!-- re password-->
 
                                     <div class="button-wrap">
-                                        <input type="submit" class="btn btn-sucess btn-lg" value="Login">
+                                        <button type="submit" class="btn btn-sucess btn-lg">Register</button>
                                     </div>
                                 </form>
                                 <!--form-->
 
-                                <div class="or text-center"><strong>OR</strong></div>
-
-                                <ul class="modal-social">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i> facebook</a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i> twitter</a></li>
-                                </ul>
-
+                                <div class="or text-center"></div>
                                 <div class="note text-center">
                                     <small>
                                         Have an account yet? <a href="#">Login Now!</a>

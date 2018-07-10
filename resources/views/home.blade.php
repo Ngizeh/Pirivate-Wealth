@@ -1,9 +1,8 @@
+
 @extends('layouts.app')
 
 @section('content')
-
-  
-    <div class="banner banner2">
+  <div class="banner banner2">
         <ul class="banner-slide">
             <li>
                 <div class="banner-content">
@@ -92,9 +91,8 @@
             <!--singel banner-->
         </ul>
     </div>
-    <!--banner-->
-
-    <main>
+   
+   <main>
         <section class="intro pri-pad-b">
             <div class="container">
                 <div class="filter-bar pri-pad-b">
@@ -166,10 +164,10 @@
                             </p>
                         </div>
                         <!--content-->
-                        <a href="#" class="btn btn-border btn-lg faa-parent animated-hover">
+                        <a href="/about" class="btn btn-border btn-lg faa-parent animated-hover">
                             About Us
                         </a>
-                        <a href="#" class="btn btn-border btn-lg faa-parent animated-hover">
+                        <a href="/property" class="btn btn-border btn-lg faa-parent animated-hover">
                            View Our Properties <i class="fa fa-long-arrow-right faa-passing"></i>
                         </a>
                     </div>
@@ -550,8 +548,5 @@
         </section>
         <!--secbscription-->
     </main>
-
-    <!-- back to top-->
-    <a href="#" class="scrollup"><i class="fa fa-angle-up"></i></a>
 
 @endsection
